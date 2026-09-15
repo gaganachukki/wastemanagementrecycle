@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management | STACKLY</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/management.css">
+
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <div id="tsparticles"></div>
+
+    <!-- Navigation -->
+        <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">
+                <img src="assets/images/logo.webp" alt="STACKLY" style="height: 40px; width: auto; object-fit: contain;">
+            </a>
+            
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="management.html" style="color: var(--secondary);">Management</a>
+                <a href="services.html">Services</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html" class="mobile-login-link">Login</a>
+            </div>
+            
+            
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-actions">
+                <a href="login.html" class="btn btn-secondary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 4px;"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    Login
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Hero -->
+    <header class="management-hero">
+        <div class="container" style="text-align: center;">
+            <h1 class="text-h1" style="color: #fff; margin-bottom: 24px;">Executive Management</h1>
+            <p class="text-lead" style="color: #E2E8F0; max-width: 800px; margin: 0 auto;">Meet the team driving STACKLY's mission towards a zero-waste global economy.</p>
+        </div>
+    </header>
+
+    <!-- Management Section 1 -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-h2" style="text-align: center; margin-bottom: 48px;">Board of Directors</h2>
+            <div class="grid grid-3">
+                <div class="card" style="text-align: center; background: var(--bg);">
+                    <img src="assets/images/content_18.webp" alt="CEO" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 16px;">
+                    <h3>Marcus Green</h3>
+                    <p class="text-muted" style="margin-bottom: 16px;">Chief Executive Officer</p>
+                    <p style="font-size: 0.875rem;">Former VP of Global Logistics, Marcus brings 20 years of supply chain expertise to sustainable waste routing.</p>
+                </div>
+                <div class="card" style="text-align: center; background: var(--bg);">
+                    <img src="assets/images/content_19.webp" alt="CTO" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 16px;">
+                    <h3>Dr. Elena Rostova</h3>
+                    <p class="text-muted" style="margin-bottom: 16px;">Chief Technology Officer</p>
+                    <p style="font-size: 0.875rem;">Lead architect behind STACKLY's proprietary AI sorting and predictive fleet maintenance systems.</p>
+                </div>
+                <div class="card" style="text-align: center; background: var(--bg);">
+                    <img src="assets/images/content_20.webp" alt="CFO" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 16px;">
+                    <h3>David Chen</h3>
+                    <p class="text-muted" style="margin-bottom: 16px;">Chief Financial Officer</p>
+                    <p style="font-size: 0.875rem;">Pioneering green financing models, David ensures sustainable operations are also economically robust.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Section 1: Letter from the CEO -->
+    <section class="section extra-section ceo-section" style="overflow: hidden;">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center; gap: 64px;">
+                <div style="position: relative; height: 500px; border-radius: var(--radius-lg); overflow: hidden;">
+                    <img src="assets/images/content_26.webp" class="ceo-parallax" alt="CEO" style="width: 100%; height: 130%; object-fit: cover; position: absolute; top: -15%;">
+                </div>
+                <div>
+                    <h2 class="text-h2" style="margin-bottom: 24px;">A Letter from Our CEO</h2>
+                    <blockquote style="font-size: 1.25rem; font-style: italic; color: var(--text-muted); border-left: 4px solid var(--accent); padding-left: 24px; margin-bottom: 32px;">
+                        "Waste is not a byproduct of civilization; it is a failure of imagination. Our management team is dedicated to closing the loop, turning today's refuse into tomorrow's resources."
+                    </blockquote>
+                    <h4 style="font-family: 'Brush Script MT', cursive; font-size: 2rem; color: var(--text-main);">Marcus Green</h4>
+                    <p class="text-muted" style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.75rem;">Chief Executive Officer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Leadership Philosophy -->
+    <section class="section extra-section alt philosophy-section">
+        <div class="container" style="text-align: center;">
+            <h2 class="text-h2" style="margin-bottom: 48px;">Our Leadership Philosophy</h2>
+            <div class="grid grid-3">
+                <div class="card philosophy-card" style="background: var(--bg); border-top: 4px solid var(--accent);">
+                    <div style="width: 64px; height: 64px; background: rgba(183, 217, 91, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px;">
+                        <svg width="32" height="32" fill="none" stroke="var(--accent)" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                    </div>
+                    <h3>Fiscal Responsibility</h3>
+                    <p class="text-muted" style="margin-top: 16px;">We believe sustainable impact is impossible without sustainable economics. Every initiative must prove ROI.</p>
+                </div>
+                <div class="card philosophy-card" style="background: var(--bg); border-top: 4px solid var(--accent);">
+                    <div style="width: 64px; height: 64px; background: rgba(183, 217, 91, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px;">
+                        <svg width="32" height="32" fill="none" stroke="var(--accent)" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path><path d="M2 12h20"></path></svg>
+                    </div>
+                    <h3>Global Transparency</h3>
+                    <p class="text-muted" style="margin-top: 16px;">We maintain open-book policies for all environmental metrics, allowing full third-party auditing.</p>
+                </div>
+                <div class="card philosophy-card" style="background: var(--bg); border-top: 4px solid var(--accent);">
+                    <div style="width: 64px; height: 64px; background: rgba(183, 217, 91, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px;">
+                        <svg width="32" height="32" fill="none" stroke="var(--accent)" stroke-width="2" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                    </div>
+                    <h3>Continuous Innovation</h3>
+                    <p class="text-muted" style="margin-top: 16px;">Technology solves the unsolvable. We aggressively fund R&D in AI sorting and chemical recycling.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Advisory Board -->
+    <section class="section extra-section">
+        <div class="container">
+            <h2 class="text-h2" style="text-align: center; margin-bottom: 48px;">Scientific Advisory Board</h2>
+            <div class="grid grid-3">
+                <div style="text-align: center;">
+                    <img src="assets/images/content_27.webp" alt="Advisor" style="width: 100%; height: 250px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: 16px; filter: grayscale(100%); transition: 0.3s;" onmouseover="this.style.filter='grayscale(0%)'" onmouseout="this.style.filter='grayscale(100%)'">
+                    <h4>Prof. Arthur Pendelton</h4>
+                    <p class="text-muted">Head of Material Sciences, MIT</p>
+                </div>
+                <div style="text-align: center;">
+                    <img src="assets/images/content_28.webp" alt="Advisor" style="width: 100%; height: 250px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: 16px; filter: grayscale(100%); transition: 0.3s;" onmouseover="this.style.filter='grayscale(0%)'" onmouseout="this.style.filter='grayscale(100%)'">
+                    <h4>Dr. Sarah Vance</h4>
+                    <p class="text-muted">Former EPA Administrator</p>
+                </div>
+                <div style="text-align: center;">
+                    <img src="assets/images/content_29.webp" alt="Advisor" style="width: 100%; height: 250px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: 16px; filter: grayscale(100%); transition: 0.3s;" onmouseover="this.style.filter='grayscale(0%)'" onmouseout="this.style.filter='grayscale(100%)'">
+                    <h4>Lin Wei</h4>
+                    <p class="text-muted">Global Policy Lead, UN Environment</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Corporate Governance -->
+    <section class="section extra-section alt">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center;">
+                <div>
+                    <h2 class="text-h2" style="margin-bottom: 24px;">Corporate Governance</h2>
+                    <p class="text-lead" style="margin-bottom: 32px;">Integrity is our strongest asset. Our governance frameworks ensure that STACKLY operates ethically, fairly, and legally across all international jurisdictions.</p>
+                    <a href="#" class="btn btn-secondary">Download Governance Report (PDF)</a>
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 16px;">
+                    <div style="padding: 24px; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: space-between;">
+                        <h4 style="margin: 0;">Code of Business Conduct</h4>
+                        <span style="color: var(--accent);">View</span>
+                    </div>
+                    <div style="padding: 24px; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: space-between;">
+                        <h4 style="margin: 0;">Whistleblower Policy</h4>
+                        <span style="color: var(--accent);">View</span>
+                    </div>
+                    <div style="padding: 24px; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: space-between;">
+                        <h4 style="margin: 0;">Anti-Corruption & Bribery</h4>
+                        <span style="color: var(--accent);">View</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Investor Relations -->
+    <section class="section extra-section">
+        <div class="container">
+            <h2 class="text-h2" style="text-align: center; margin-bottom: 48px;">Investor Relations</h2>
+            <div style="position: relative; padding: 64px; border-radius: var(--radius-lg); background: url('assets/images/content_30.webp') center/cover; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+                <div style="position: absolute; inset: 0; background: rgba(18, 60, 50, 0.9);"></div>
+                <div class="grid grid-3" style="position: relative; z-index: 1; width: 100%; text-align: center; color: #fff;">
+                    <div>
+                        <h1 style="font-size: 3.5rem; color: var(--accent); margin-bottom: 8px;">&#36;1.2B</h1>
+                        <p style="font-size: 1.125rem;">FY25 Revenue</p>
+                    </div>
+                    <div>
+                        <h1 style="font-size: 3.5rem; color: var(--accent); margin-bottom: 8px;">34%</h1>
+                        <p style="font-size: 1.125rem;">YOY Growth</p>
+                    </div>
+                    <div>
+                        <h1 style="font-size: 3.5rem; color: var(--accent); margin-bottom: 8px;">18%</h1>
+                        <p style="font-size: 1.125rem;">EBITDA Margin</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Org Chart -->
+    <section class="section extra-section alt org-section">
+        <div class="container" style="text-align: center;">
+            <h2 class="text-h2" style="margin-bottom: 48px;">Organizational Structure</h2>
+            
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <!-- CEO Level -->
+                <div class="org-node" style="padding: 16px 32px; background: var(--primary); color: #fff; border-radius: 8px; border: 2px solid var(--accent); z-index: 2;">
+                    <strong>Marcus Green</strong><br><span style="font-size: 0.75rem;">CEO</span>
+                </div>
+                <div class="org-line" style="width: 2px; height: 40px; background: var(--accent);"></div>
+                
+                <!-- C-Suite Level -->
+                <div style="display: flex; position: relative;">
+                    <!-- Horizontal connector line -->
+                    <div class="org-line" style="position: absolute; top: 0; left: 15%; right: 15%; height: 2px; background: var(--accent); z-index: 1;"></div>
+                    
+                    <div style="display: flex; gap: 48px; position: relative; z-index: 2; padding-top: 20px;">
+                        <div style="position: relative;">
+                            <div class="org-line" style="position: absolute; top: -20px; left: 50%; width: 2px; height: 20px; background: var(--accent);"></div>
+                            <div class="org-node" style="padding: 16px 24px; background: var(--surface); border-radius: 8px; border: 1px solid var(--border);">
+                                <strong>Dr. Elena Rostova</strong><br><span style="font-size: 0.75rem;">CTO</span>
+                            </div>
+                        </div>
+                        <div style="position: relative;">
+                            <div class="org-line" style="position: absolute; top: -20px; left: 50%; width: 2px; height: 20px; background: var(--accent);"></div>
+                            <div class="org-node" style="padding: 16px 24px; background: var(--surface); border-radius: 8px; border: 1px solid var(--border);">
+                                <strong>David Chen</strong><br><span style="font-size: 0.75rem;">CFO</span>
+                            </div>
+                        </div>
+                        <div style="position: relative;">
+                            <div class="org-line" style="position: absolute; top: -20px; left: 50%; width: 2px; height: 20px; background: var(--accent);"></div>
+                            <div class="org-node" style="padding: 16px 24px; background: var(--surface); border-radius: 8px; border: 1px solid var(--border);">
+                                <strong>Lisa Vance</strong><br><span style="font-size: 0.75rem;">COO</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Section 7: Shareholder Meetings -->
+    <section class="section extra-section">
+        <div class="container">
+            <h2 class="text-h2" style="text-align: center; margin-bottom: 48px;">Upcoming Shareholder Meetings</h2>
+            <div class="grid grid-2">
+                <div class="card" style="display: flex; gap: 24px; align-items: center; padding: 24px; background: var(--surface);">
+                    <img src="assets/images/content_31.webp" alt="Meeting" style="width: 100px; height: 100px; object-fit: cover; border-radius: var(--radius-md);">
+                    <div>
+                        <span style="color: var(--accent); font-weight: bold; font-size: 0.875rem;">OCT 15, 2026</span>
+                        <h4 style="margin: 8px 0;">Q3 Earnings Call</h4>
+                        <a href="#" style="color: var(--text-main); font-size: 0.875rem; text-decoration: underline;">Register for Webcast</a>
+                    </div>
+                </div>
+                <div class="card" style="display: flex; gap: 24px; align-items: center; padding: 24px; background: var(--surface);">
+                    <img src="assets/images/content_32.webp" alt="Meeting" style="width: 100px; height: 100px; object-fit: cover; border-radius: var(--radius-md);">
+                    <div>
+                        <span style="color: var(--accent); font-weight: bold; font-size: 0.875rem;">JAN 20, 2027</span>
+                        <h4 style="margin: 8px 0;">Annual General Meeting</h4>
+                        <a href="#" style="color: var(--text-main); font-size: 0.875rem; text-decoration: underline;">View Agenda</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: Brand -->
+                <div class="footer-brand-col">
+                    <a href="index.html" class="nav-brand footer-logo" style="margin-left: 0;">
+                <img src="assets/images/logo.webp" alt="STACKLY" style="height: 40px; width: auto; object-fit: contain;">
+            </a>
+                    <p class="footer-desc">A premium partner for sustainable waste management worldwide. Experience recycling with unparalleled efficiency.</p>
+                    <div class="social-links">
+                        <a href="#"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                        <a href="#"><svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M12.6.75h2.4L8.91 7.18 16 15.25h-5.55l-4.34-5.35-4.94 5.35H.1l6.54-7.4L0 .75h5.68l3.92 4.9L12.6.75z"></path></svg></a>
+                        <a href="#"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm3.98-10.181a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                        <a href="#"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a>
+                <a href="management.html" style="color: var(--secondary);">Management</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Company -->
+                <div class="footer-col">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact -->
+                <div class="footer-col contact-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            support@stackly.com
+                        </li>
+                        <li>
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            +91 98765 43210
+                        </li>
+                        <li>
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            Salem, Tamil Nadu 636008
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 5: Newsletter -->
+                <div class="footer-col newsletter-col">
+                    <h3>Newsletter</h3>
+                    
+                    <form class="footer-newsletter" onsubmit="event.preventDefault();">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom-bar">
+                <p>&copy; 2026 STACKLY. All rights reserved.</p>
+                <a href="#" class="back-to-top">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-engine"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles/tsparticles.bundle.min.js"></script>
+    <script src="js/animations.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    if(typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+        // Parallax effect on CEO image
+        gsap.to(".ceo-parallax", {
+            yPercent: 20,
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".ceo-section",
+                start: "top bottom",
+                end: "bottom top",
+                scrub: true
+            }
+        });
+
+        // Staggered fade in for philosophy pillars
+        gsap.from(".philosophy-card", {
+            scrollTrigger: {
+                trigger: ".philosophy-section",
+                start: "top 80%"
+            },
+            y: 100,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.2,
+            ease: "back.out(1.7)"
+        });
+
+        // Org Chart animation
+        gsap.from(".org-node", {
+            scrollTrigger: {
+                trigger: ".org-section",
+                start: "top 75%"
+            },
+            scale: 0,
+            opacity: 0,
+            duration: 0.6,
+            stagger: 0.1,
+            ease: "elastic.out(1, 0.5)"
+        });
+        
+        gsap.from(".org-line", {
+            scrollTrigger: {
+                trigger: ".org-section",
+                start: "top 75%"
+            },
+            scaleX: 0,
+            scaleY: 0,
+            transformOrigin: "left center",
+            duration: 0.8,
+            delay: 0.4
+        });
+    }
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    if(typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+        // Parallax effect on CEO image
+        gsap.to(".ceo-parallax", {
+            yPercent: 20,
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".ceo-section",
+                start: "top bottom",
+                end: "bottom top",
+                scrub: true
+            }
+        });
+
+        // Staggered fade in for philosophy pillars
+        gsap.from(".philosophy-card", {
+            scrollTrigger: {
+                trigger: ".philosophy-section",
+                start: "top 80%"
+            },
+            y: 100,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.2,
+            ease: "back.out(1.7)"
+        });
+
+        // Org Chart animation
+        gsap.from(".org-node", {
+            scrollTrigger: {
+                trigger: ".org-section",
+                start: "top 75%"
+            },
+            scale: 0,
+            opacity: 0,
+            duration: 0.6,
+            stagger: 0.1,
+            ease: "elastic.out(1, 0.5)"
+        });
+        
+        gsap.from(".org-line", {
+            scrollTrigger: {
+                trigger: ".org-section",
+                start: "top 75%"
+            },
+            scaleX: 0,
+            scaleY: 0,
+            transformOrigin: "left center",
+            duration: 0.8,
+            delay: 0.4
+        });
+    }
+});
+</script>
+</body>
+
+
+</html>
+

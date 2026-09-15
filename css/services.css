@@ -1,0 +1,90 @@
+/* Services Page Specific Styles */
+.services-hero {
+  background-image: url("../assets/images/hero_4.webp");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  padding: 100px 0;
+  background: var(--bg);
+  text-align: center;
+}
+.services-hero::before { content: ""; position: absolute; inset: 0; background: rgba(246, 245, 239, 0.85); z-index: 0; }
+.services-hero .container {
+  position: relative; z-index: 1;
+}
+.services-hero h1 {
+
+  margin-bottom: 24px;
+}
+.services-hero p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  color: var(--text-muted);
+}
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-top: 64px;
+}
+.service-card {
+  display: flex;
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  gap: 24px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+.service-icon {
+  width: 64px;
+  height: 64px;
+  background: rgba(31, 138, 91, 0.1);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary);
+  flex-shrink: 0;
+}
+
+/* Include scheduling/tracking components from index.css for reuse */
+.booking-interface {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: 48px;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border);
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.form-group label {
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+.form-control {
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+  font-size: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .service-cards { grid-template-columns: 1fr; }
+}
+@media (max-width: 768px) {
+  .service-card { flex-direction: column; }
+  .form-grid { grid-template-columns: 1fr; }
+}

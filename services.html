@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | STACKLY</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/services.css">
+
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <div id="tsparticles"></div>
+
+    <!-- Header / Navigation -->
+        <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">
+                <img src="assets/images/logo.webp" alt="STACKLY" style="height: 40px; width: auto; object-fit: contain;">
+            </a>
+            
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="management.html">Management</a>
+                <a href="services.html" style="color: var(--secondary);">Services</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html" class="mobile-login-link">Login</a>
+            </div>
+            
+            
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-actions">
+                <a href="login.html" class="btn btn-secondary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 4px;"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    Login
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="services-hero">
+        <div class="container">
+            <h1 class="text-h1">Complete Waste Solutions</h1>
+            <p>From collection to recycling, we provide end-to-end waste management services for households and businesses.</p>
+            
+            <div class="service-cards">
+                <div class="service-card">
+                    <!-- Icon Placeholder -->
+                    <div class="service-icon">
+                        <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    </div>
+                    <div style="text-align: left;">
+                        <h3 style="margin-bottom: 12px;">Household Collection</h3>
+                        <p class="text-muted">Reliable scheduled pickups for mixed recyclables, organics, and general waste.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <!-- Icon Placeholder -->
+                    <div class="service-icon">
+                        <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline></svg>
+                    </div>
+                    <div style="text-align: left;">
+                        <h3 style="margin-bottom: 12px;">Business Solutions</h3>
+                        <p class="text-muted">Tailored waste management for offices, retail, and industrial facilities with ESG reporting.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <!-- Icon Placeholder -->
+                    <div class="service-icon">
+                        <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                    </div>
+                    <div style="text-align: left;">
+                        <h3 style="margin-bottom: 12px;">E-Waste Disposal</h3>
+                        <p class="text-muted">Safe, compliant destruction and recycling of electronics and batteries.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <!-- Icon Placeholder -->
+                    <div class="service-icon">
+                        <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2z"></path></svg>
+                    </div>
+                    <div style="text-align: left;">
+                        <h3 style="margin-bottom: 12px;">Organic & Compost</h3>
+                        <p class="text-muted">Transforming food scraps and garden waste into rich compost for agriculture.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Waste Guide Section from old index -->
+    <section id="guide" class="section" style="background: var(--primary); color: var(--surface);">
+        <div class="container">
+            <h2 class="text-h2" style="margin-bottom: 16px; color: var(--surface);">Know your waste. Sort it right.</h2>
+            <p class="text-lead" style="color: rgba(255,255,255,0.8); margin-bottom: 48px;">The easiest way to improve recycling is proper separation.</p>
+            
+            <div class="grid grid-3">
+                <div style="background: rgba(255,255,255,0.05); padding: 24px; border-radius: var(--radius-md);">
+                    <h4 style="color: var(--plastic); margin-bottom: 12px;">PLASTIC</h4>
+                    <ul style="color: rgba(255,255,255,0.8); font-size: 0.875rem;"><li>Bottles</li><li>Containers</li><li>Clean Packaging</li></ul>
+                </div>
+                <div style="background: rgba(255,255,255,0.05); padding: 24px; border-radius: var(--radius-md);">
+                    <h4 style="color: var(--paper); margin-bottom: 12px;">PAPER</h4>
+                    <ul style="color: rgba(255,255,255,0.8); font-size: 0.875rem;"><li>Newspapers</li><li>Cardboard</li><li>Office paper</li></ul>
+                </div>
+                <div style="background: rgba(255,255,255,0.05); padding: 24px; border-radius: var(--radius-md);">
+                    <h4 style="color: var(--metal); margin-bottom: 12px;">METAL & GLASS</h4>
+                    <ul style="color: rgba(255,255,255,0.8); font-size: 0.875rem;"><li>Cans & Tins</li><li>Beverage bottles</li><li>Jars</li></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scheduling Section -->
+    <section id="schedule" class="section">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center;">
+                <div>
+                    <h2 class="text-h2" style="margin-bottom: 24px;">Waste collection, without the waiting.</h2>
+                    <p class="text-lead" style="margin-bottom: 32px;">Schedule on-demand pickups or set up a recurring collection schedule.</p>
+                    <ul style="margin-bottom: 32px; display: flex; flex-direction: column; gap: 16px;">
+                        <li style="display: flex; gap: 12px; align-items: center;">
+                            <svg width="24" height="24" fill="var(--secondary)" viewBox="0 0 24 24"><path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22ZM10.5 16.5L6 12L7.4 10.6L10.5 13.7L16.6 7.6L18 9L10.5 16.5Z"/></svg>
+                            Live tracking of your collection vehicle
+                        </li>
+                        <li style="display: flex; gap: 12px; align-items: center;">
+                            <svg width="24" height="24" fill="var(--secondary)" viewBox="0 0 24 24"><path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22ZM10.5 16.5L6 12L7.4 10.6L10.5 13.7L16.6 7.6L18 9L10.5 16.5Z"/></svg>
+                            Digital weight receipts
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="booking-interface">
+                    <form>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Waste Type</label>
+                                <select class="form-control">
+                                    <option>Recyclables (Mixed)</option>
+                                    <option>Organic</option>
+                                    <option>E-waste</option>
+                                    <option>Bulk Waste</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Pickup Address</label>
+                                <input type="text" class="form-control" placeholder="Enter your address">
+                            </div>
+                            <div class="form-group">
+                                <label>Preferred Date</label>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Preferred Time</label>
+                                <select class="form-control">
+                                    <option>Morning (8AM - 12PM)</option>
+                                    <option>Afternoon (12PM - 4PM)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary" style="width: 100%;">Schedule Pickup</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- New Section 1: Pricing Plans -->
+    <section class="section extra-section alt">
+        <div class="container">
+            <h2 class="text-h2" style="text-align: center; margin-bottom: 48px;">Transparent Pricing</h2>
+            <div class="grid grid-3">
+                <div class="card" style="background: var(--bg); border: 1px solid var(--border); text-align: center;">
+                    <h3 style="margin-bottom: 16px;">Residential</h3>
+                    <h2 class="text-h1" style="color: var(--accent); margin-bottom: 16px;">\<span style="font-size: 1rem; color: var(--text-muted);">/mo</span></h2>
+                    <ul style="text-align: left; margin-bottom: 24px; color: var(--text-muted); display: flex; flex-direction: column; gap: 12px;">
+                        <li>Weekly mixed recycling pickup</li>
+                        <li>Bi-weekly organic waste</li>
+                        <li>1 Free bulk pickup per year</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary" style="width: 100%;">Select Plan</a>
+                </div>
+                <div class="card" style="background: var(--surface); border: 2px solid var(--accent); text-align: center; transform: scale(1.05); z-index: 1;">
+                    <div style="background: var(--accent); color: var(--text-main); font-weight: bold; font-size: 0.75rem; padding: 4px; border-radius: 4px; margin-bottom: 16px; display: inline-block;">MOST POPULAR</div>
+                    <h3 style="margin-bottom: 16px;">Business Starter</h3>
+                    <h2 class="text-h1" style="color: var(--accent); margin-bottom: 16px;">\<span style="font-size: 1rem; color: var(--text-muted);">/mo</span></h2>
+                    <ul style="text-align: left; margin-bottom: 24px; color: var(--text-muted); display: flex; flex-direction: column; gap: 12px;">
+                        <li>Daily or Weekly flexible pickups</li>
+                        <li>Basic ESG reporting dashboard</li>
+                        <li>Free smart bin sensors (up to 3)</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary" style="width: 100%;">Select Plan</a>
+                </div>
+                <div class="card" style="background: var(--bg); border: 1px solid var(--border); text-align: center;">
+                    <h3 style="margin-bottom: 16px;">Enterprise</h3>
+                    <h2 class="text-h1" style="color: var(--accent); margin-bottom: 16px;">Custom</h2>
+                    <ul style="text-align: left; margin-bottom: 24px; color: var(--text-muted); display: flex; flex-direction: column; gap: 12px;">
+                        <li>Dedicated fleet routing</li>
+                        <li>Full audit and compliance reporting</li>
+                        <li>Zero-waste consulting integration</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary" style="width: 100%;">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Section 2: Consulting -->
+    <section class="section extra-section">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center;">
+                <div>
+                    <h2 class="text-h2" style="margin-bottom: 24px;">Sustainability Consulting</h2>
+                    <p class="text-lead" style="margin-bottom: 24px;">Go beyond collection. Our team of environmental scientists and engineers will analyze your entire supply chain to identify waste reduction opportunities and improve your ESG ratings.</p>
+                    <ul style="color: var(--text-muted); display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px;">
+                        <li>? Waste stream audits</li>
+                        <li>? Compliance and regulatory guidance</li>
+                        <li>? Carbon footprint analysis</li>
+                    </ul>
+                </div>
+                <div style="background: var(--surface); padding: 40px; border-radius: var(--radius-md); text-align: center;">
+                    <svg width="64" height="64" fill="none" stroke="var(--accent)" stroke-width="2" viewBox="0 0 24 24" style="margin-bottom: 24px;"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                    <h3>Average ROI of 200%</h3>
+                    <p class="text-muted" style="margin-top: 12px;">Clients typically save twice their consulting fee in reduced disposal costs within the first year.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Section 3: Hazardous -->
+    <section class="section extra-section alt">
+        <div class="container" style="text-align: center;">
+            <h2 class="text-h2" style="margin-bottom: 24px;">Hazardous & Medical Waste</h2>
+            <p class="text-lead" style="max-width: 600px; margin: 0 auto 48px;">Fully compliant, secure handling of sensitive materials. We provide specialized containers, secure chain-of-custody tracking, and legal destruction certificates.</p>
+            <div class="grid grid-3">
+                <div class="card">
+                    <h4>Medical Sharps</h4>
+                    <p class="text-muted" style="font-size: 0.875rem; margin-top: 8px;">Safe disposal for clinics, hospitals, and veterinary centers.</p>
+                </div>
+                <div class="card">
+                    <h4>Chemical Waste</h4>
+                    <p class="text-muted" style="font-size: 0.875rem; margin-top: 8px;">Neutralization and safe disposal of lab and industrial chemicals.</p>
+                </div>
+                <div class="card">
+                    <h4>Data Destruction</h4>
+                    <p class="text-muted" style="font-size: 0.875rem; margin-top: 8px;">Secure shredding of hard drives and sensitive documents.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Section 4: Equipment -->
+    <section class="section extra-section">
+        <div class="container">
+            <h2 class="text-h2" style="text-align: center; margin-bottom: 48px;">Equipment Leasing</h2>
+            <div class="grid grid-4">
+                <div class="card" style="text-align: center; padding: 24px;">
+                    <div style="width: 100%; height: 120px; background: rgba(255,255,255,0.05); border-radius: 8px; margin-bottom: 16px; display: flex; align-items: center; justify-content: center;">Dumpster Icon</div>
+                    <h4>Roll-off Dumpsters</h4>
+                </div>
+                <div class="card" style="text-align: center; padding: 24px;">
+                    <div style="width: 100%; height: 120px; background: rgba(255,255,255,0.05); border-radius: 8px; margin-bottom: 16px; display: flex; align-items: center; justify-content: center;">Baler Icon</div>
+                    <h4>Cardboard Balers</h4>
+                </div>
+                <div class="card" style="text-align: center; padding: 24px;">
+                    <div style="width: 100%; height: 120px; background: rgba(255,255,255,0.05); border-radius: 8px; margin-bottom: 16px; display: flex; align-items: center; justify-content: center;">Smart Bin Icon</div>
+                    <h4>IoT Smart Bins</h4>
+                </div>
+                <div class="card" style="text-align: center; padding: 24px;">
+                    <div style="width: 100%; height: 120px; background: rgba(255,255,255,0.05); border-radius: 8px; margin-bottom: 16px; display: flex; align-items: center; justify-content: center;">Compactor Icon</div>
+                    <h4>Industrial Compactors</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Section 5: FAQ -->
+    <section class="section extra-section alt">
+        <div class="container">
+            <h2 class="text-h2" style="text-align: center; margin-bottom: 48px;">Frequently Asked Questions</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="faq-item">
+                    <h4>Do I need to clean my recyclables before pickup?</h4>
+                    <p class="text-muted" style="font-size: 0.875rem;">Yes, please quickly rinse plastics and metals to remove food residue. This prevents contamination of the entire batch.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What happens if I miss my scheduled pickup?</h4>
+                    <p class="text-muted" style="font-size: 0.875rem;">You can easily reschedule through our mobile app or dashboard for the next available route in your area at no extra charge.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can you handle construction debris?</h4>
+                    <p class="text-muted" style="font-size: 0.875rem;">Yes, our bulk waste and roll-off dumpster services are perfect for construction sites. We also provide LEED-compliant recycling reports.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Are the smart bin sensors secure?</h4>
+                    <p class="text-muted" style="font-size: 0.875rem;">Absolutely. Our IoT sensors use end-to-end encryption and transmit only fill-level data over cellular networks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+        
+<!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: Brand -->
+                <div class="footer-brand-col">
+                    <a href="index.html" class="nav-brand footer-logo" style="margin-left: 0;">
+                <img src="assets/images/logo.webp" alt="STACKLY" style="height: 40px; width: auto; object-fit: contain;">
+            </a>
+                    <p class="footer-desc">A premium partner for sustainable waste management worldwide. Experience recycling with unparalleled efficiency.</p>
+                    <div class="social-links">
+                        <a href="#"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                        <a href="#"><svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M12.6.75h2.4L8.91 7.18 16 15.25h-5.55l-4.34-5.35-4.94 5.35H.1l6.54-7.4L0 .75h5.68l3.92 4.9L12.6.75z"></path></svg></a>
+                        <a href="#"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm3.98-10.181a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                        <a href="#"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a>
+                <a href="management.html">Management</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Company -->
+                <div class="footer-col">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact -->
+                <div class="footer-col contact-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            support@stackly.com
+                        </li>
+                        <li>
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            +91 98765 43210
+                        </li>
+                        <li>
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            Salem, Tamil Nadu 636008
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 5: Newsletter -->
+                <div class="footer-col newsletter-col">
+                    <h3>Newsletter</h3>
+                    
+                    <form class="footer-newsletter" onsubmit="event.preventDefault();">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom-bar">
+                <p>&copy; 2026 STACKLY. All rights reserved.</p>
+                <a href="#" class="back-to-top">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-engine"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles/tsparticles.bundle.min.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>

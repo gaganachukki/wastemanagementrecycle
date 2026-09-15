@@ -1,0 +1,94 @@
+/* 404 Page Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg, #0b0f0c);
+    color: #fff;
+    font-family: inherit;
+    overflow: hidden;
+}
+
+.error-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding: 20px;
+}
+
+.error-content {
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 64px 40px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.8s ease-out;
+}
+
+.error-icon {
+    font-size: 4rem;
+    color: var(--primary, #1F8A5B);
+    margin-bottom: 24px;
+}
+
+.error-content h1 {
+    font-size: 8rem;
+    font-weight: 900;
+    margin: 0;
+    line-height: 1;
+    color: var(--primary, #1F8A5B);
+    text-shadow: 0 0 30px rgba(31, 138, 91, 0.3);
+    letter-spacing: -2px;
+}
+
+.error-content h2 {
+    font-size: 2rem;
+    margin: 16px 0;
+    font-weight: 700;
+    color: #fff;
+}
+
+.error-content p {
+    font-size: 1.1rem;
+    color: #a0aab2;
+    line-height: 1.6;
+    margin-bottom: 32px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.error-content .btn-return {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--primary, #1F8A5B);
+    color: #000;
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    transition: all 0.3s ease;
+}
+
+.error-content .btn-return:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(31, 138, 91, 0.3);
+    background-color: #269e6b;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    .error-content h1 { font-size: 6rem; }
+    .error-content h2 { font-size: 1.5rem; }
+}

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Resources | STACKLY</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <div id="tsparticles"></div>
+
+    <!-- Header / Navigation -->
+        <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">
+                <img src="assets/images/logo.webp" alt="STACKLY" style="height: 40px; width: auto; object-fit: contain;">
+            </a>
+            
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="management.html">Management</a>
+                <a href="services.html">Services</a>
+                <a href="blog.html" style="color: var(--secondary);">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html" class="mobile-login-link">Login</a>
+            </div>
+            
+            
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-actions">
+                <a href="login.html" class="btn btn-secondary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 4px;"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    Login
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Hero -->
+    <header class="blog-hero">
+        <div class="container">
+            <h1 class="text-h1">The smarter way to understand waste.</h1>
+            <p>Practical recycling tips, local collection updates, and sustainability insights from the circular economy.</p>
+        </div>
+    </header>
+
+    <!-- Articles -->
+    <section class="section">
+        <div class="container">
+            <div style="display: flex; gap: 16px; margin-bottom: 40px; border-bottom: 1px solid var(--border); padding-bottom: 24px;">
+                <span class="btn" style="background: var(--surface); border: 1px solid var(--primary); color: var(--primary);">All Articles</span>
+                <span class="btn" style="background: transparent; color: var(--text-muted);">Guides</span>
+                <span class="btn" style="background: transparent; color: var(--text-muted);">Circular Economy</span>
+                <span class="btn" style="background: transparent; color: var(--text-muted);">Community</span>
+            </div>
+
+            <div class="article-grid">
+                <a href="#" class="article-card">
+                    <div class="article-image"><img src="assets/images/content_10.webp" alt="Blog" style="width:100%;height:100%;object-fit:cover;"></div>
+                    <div class="article-content">
+                        <span class="article-category">Guide</span>
+                        <h3 class="article-title">How to segregate waste perfectly at home</h3>
+                        <p class="article-desc">A step-by-step breakdown of how to prepare and sort your recyclables to ensure zero contamination.</p>
+                        <div class="article-meta">
+                            <span>4 min read</span>
+                            <span style="color: var(--primary);">Read →</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="article-card">
+                    <div class="article-image"><img src="assets/images/content_11.webp" alt="Blog" style="width:100%;height:100%;object-fit:cover;"></div>
+                    <div class="article-content">
+                        <span class="article-category">Circular Economy</span>
+                        <h3 class="article-title">What happens after your recycling is collected?</h3>
+                        <p class="article-desc">Trace the journey of your plastic bottle from your bin to its new life as a park bench.</p>
+                        <div class="article-meta">
+                            <span>6 min read</span>
+                            <span style="color: var(--primary);">Read →</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="article-card">
+                    <div class="article-image"><img src="assets/images/content_12.webp" alt="Blog" style="width:100%;height:100%;object-fit:cover;"></div>
+                    <div class="article-content">
+                        <span class="article-category">Guide</span>
+                        <h3 class="article-title">E-waste: what you really need to know</h3>
+                        <p class="article-desc">Why throwing batteries in the general bin is dangerous and how we safely recover rare metals.</p>
+                        <div class="article-meta">
+                            <span>5 min read</span>
+                            <span style="color: var(--primary);">Read →</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-card">
+                <h2 class="text-h2">Make your next bin a better one.</h2>
+                <p class="text-muted" style="margin-top: 16px;">Get practical recycling tips and sustainability insights delivered to your inbox.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="button" class="btn btn-primary">Join the Loop →</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- New Section 1: Featured Author -->
+    <section class="section extra-section alt">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center; background: var(--bg); padding: 40px; border-radius: var(--radius-md);">
+                <div style="display: flex; justify-content: center;">
+                    <div style="width: 200px; height: 200px; border-radius: 50%; background: url('assets/images/content_13.webp') center/cover;"></div>
+                </div>
+                <div>
+                    <span style="color: var(--accent); font-weight: bold; font-size: 0.875rem; text-transform: uppercase;">Editor's Pick</span>
+                    <h2 class="text-h2" style="margin-bottom: 16px;">Meet Dr. Emily Chen</h2>
+                    <p class="text-lead" style="margin-bottom: 24px;">Our lead environmental scientist breaks down complex circular economy policies into actionable advice for businesses.</p>
+                    <a href="#" class="btn btn-secondary">Read Emily's Articles</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Section 2: Podcast -->
+    <section class="section extra-section">
+        <div class="container">
+            <h2 class="text-h2" style="text-align: center; margin-bottom: 48px;">Listen to the Circular Economy</h2>
+            <div class="grid grid-2">
+                <div class="card" style="display: flex; gap: 24px; align-items: center;">
+                    <div style="width: 100px; height: 100px; background: var(--accent); border-radius: var(--radius-md); flex-shrink: 0; display: flex; align-items: center; justify-content: center;">
+                        <svg width="40" height="40" fill="none" stroke="var(--text-main)" stroke-width="2" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                    </div>
+                    <div>
+                        <h4 style="margin-bottom: 8px;">Ep 42: The Myth of Biodegradable Plastic</h4>
+                        <p class="text-muted" style="font-size: 0.875rem; margin-bottom: 8px;">45 mins | Guest: Jason Bourne</p>
+                    </div>
+                </div>
+                <div class="card" style="display: flex; gap: 24px; align-items: center;">
+                    <div style="width: 100px; height: 100px; background: var(--surface); border-radius: var(--radius-md); flex-shrink: 0; display: flex; align-items: center; justify-content: center;">
+                        <svg width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                    </div>
+                    <div>
+                        <h4 style="margin-bottom: 8px;">Ep 41: Composting at Industrial Scale</h4>
+                        <p class="text-muted" style="font-size: 0.875rem; margin-bottom: 8px;">38 mins | Guest: Maria Garcia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Section 3: Trending Topics -->
+    <section class="section extra-section alt">
+        <div class="container" style="text-align: center;">
+            <h2 class="text-h2" style="margin-bottom: 32px;">Trending Topics</h2>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px;">
+                <span class="btn" style="background: rgba(255,255,255,0.05); color: #fff; border: 1px solid var(--border);">#Microplastics</span>
+                <span class="btn" style="background: rgba(255,255,255,0.05); color: #fff; border: 1px solid var(--border);">#Upcycling</span>
+                <span class="btn" style="background: rgba(255,255,255,0.05); color: #fff; border: 1px solid var(--border);">#ESGReporting</span>
+                <span class="btn" style="background: rgba(255,255,255,0.05); color: #fff; border: 1px solid var(--border);">#PolicyChange</span>
+                <span class="btn" style="background: rgba(255,255,255,0.05); color: #fff; border: 1px solid var(--border);">#ZeroWasteLifestyle</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Section 4: Upcoming Events -->
+    <section class="section extra-section">
+        <div class="container">
+            <h2 class="text-h2" style="margin-bottom: 48px;">Upcoming Webinars & Events</h2>
+            <div style="display: flex; flex-direction: column; gap: 16px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 24px; background: var(--surface); border-radius: var(--radius-md); border-left: 4px solid var(--accent);">
+                    <div>
+                        <p style="color: var(--accent); font-weight: bold; font-size: 0.875rem; margin-bottom: 8px;">NOV 12 | 2:00 PM EST</p>
+                        <h4>Navigating the new EU Packaging Regulations</h4>
+                    </div>
+                    <button class="btn btn-secondary">Register Free</button>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 24px; background: var(--surface); border-radius: var(--radius-md); border-left: 4px solid var(--accent);">
+                    <div>
+                        <p style="color: var(--accent); font-weight: bold; font-size: 0.875rem; margin-bottom: 8px;">DEC 05 | 10:00 AM PST</p>
+                        <h4>Building a Zero-Waste Supply Chain from Scratch</h4>
+                    </div>
+                    <button class="btn btn-secondary">Register Free</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Section 5: Community Contributor -->
+    <section class="section extra-section alt">
+        <div class="container" style="text-align: center;">
+            <div style="max-width: 600px; margin: 0 auto; padding: 48px; background: rgba(183, 217, 91, 0.1); border-radius: var(--radius-md); border: 1px solid rgba(183, 217, 91, 0.3);">
+                <h2 class="text-h2" style="margin-bottom: 16px;">Have a story to share?</h2>
+                <p class="text-lead" style="margin-bottom: 32px; font-size: 1rem;">We are always looking for community members, activists, and business owners to share their journey towards sustainability.</p>
+                <button class="btn btn-primary">Become a Contributor</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+        
+<!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: Brand -->
+                <div class="footer-brand-col">
+                    <a href="index.html" class="nav-brand footer-logo" style="margin-left: 0;">
+                <img src="assets/images/logo.webp" alt="STACKLY" style="height: 40px; width: auto; object-fit: contain;">
+            </a>
+                    <p class="footer-desc">A premium partner for sustainable waste management worldwide. Experience recycling with unparalleled efficiency.</p>
+                    <div class="social-links">
+                        <a href="#"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                        <a href="#"><svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M12.6.75h2.4L8.91 7.18 16 15.25h-5.55l-4.34-5.35-4.94 5.35H.1l6.54-7.4L0 .75h5.68l3.92 4.9L12.6.75z"></path></svg></a>
+                        <a href="#"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm3.98-10.181a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                        <a href="#"><svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a>
+                <a href="management.html">Management</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Company -->
+                <div class="footer-col">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact -->
+                <div class="footer-col contact-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            support@stackly.com
+                        </li>
+                        <li>
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            +91 98765 43210
+                        </li>
+                        <li>
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            Salem, Tamil Nadu 636008
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 5: Newsletter -->
+                <div class="footer-col newsletter-col">
+                    <h3>Newsletter</h3>
+                    
+                    <form class="footer-newsletter" onsubmit="event.preventDefault();">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom-bar">
+                <p>&copy; 2026 STACKLY. All rights reserved.</p>
+                <a href="#" class="back-to-top">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-engine"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles/tsparticles.bundle.min.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>

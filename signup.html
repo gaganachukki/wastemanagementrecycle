@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | STACKLY</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="tsparticles"></div>
+
+    <div class="signup-page">
+        <!-- Visual Side -->
+        <div class="signup-visual">
+            <h1>Start Your<br>Journey with<br><span style="color: var(--primary);">Stackly</span></h1>
+            <p class="subtext">Join our community today to track your waste diversion, manage your recycling pickups, book special collections, and achieve your zero-waste goals.</p>
+            
+            <div class="testimonial-card">
+                <div style="color: #eab308; margin-bottom: 16px; font-size: 1.1rem; display:flex; gap:4px;">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p style="font-style: italic; font-size: 1.1rem; line-height: 1.6; color: #fff; margin:0;">"Stackly gave me the structure I needed. The recycling process has never been easier and our community is cleaner than ever."</p>
+            </div>
+        </div>
+
+        <!-- Form Side -->
+        <div class="signup-form-container">
+            <div class="signup-header">
+                <h2>Create an Account</h2>
+                <p>Sign up to get started</p>
+            </div>
+
+            <div class="role-selector" style="display:flex; gap:16px; margin-bottom:12px;">
+                <button type="button" id="btn-client" onclick="setRole('client')" class="role-btn active" style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:12px; border-radius:8px; border:1px solid var(--primary); background:transparent; color:#111; cursor:pointer;">
+                    <i id="icon-client" class="fa-solid fa-user" style="color:var(--primary); font-size:1.5rem; margin-bottom:8px;"></i>
+                    <span style="font-weight:600;">Client</span>
+                </button>
+                <button type="button" id="btn-admin" onclick="setRole('admin')" class="role-btn" style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:12px; border-radius:8px; border:1px solid #e2e8f0; background:transparent; color:#888; cursor:pointer;">
+                    <i id="icon-admin" class="fa-solid fa-shield-halved" style="color:#888; font-size:1.5rem; margin-bottom:8px;"></i>
+                    <span style="font-weight:500;">Admin</span>
+                </button>
+            </div>
+
+            <form id="authForm" class="signup-form">
+                
+                <div style="margin-bottom:4px;">
+                    <input type="text" class="form-control" placeholder="Full Name" required>
+                </div>
+
+                <div style="margin-bottom:4px;">
+                    <input type="email" class="form-control" placeholder="Email Address" required>
+                </div>
+                
+                <div style="margin-bottom:4px; position:relative;">
+                    <input type="password" class="form-control" placeholder="Create Password" required style="padding-right:40px;">
+                    <i class="fa-solid fa-eye" style="position:absolute; right:16px; top:50%; transform:translateY(-50%); color:#888; cursor:pointer;"></i>
+                </div>
+
+                <div style="margin-bottom:12px; position:relative;">
+                    <input type="password" class="form-control" placeholder="Confirm Password" required style="padding-right:40px;">
+                    <i class="fa-solid fa-eye" style="position:absolute; right:16px; top:50%; transform:translateY(-50%); color:#888; cursor:pointer;"></i>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding:12px; font-weight:bold; font-size:1rem; border-radius:8px; background:var(--primary); color:#000; border:none; cursor:pointer;">Create Account</button>
+                
+                <p style="text-align:center; margin-top:12px; color:#888; font-size:0.95rem;">
+                    Already have an account? <a href="login.html" style="color:var(--primary); font-weight:bold; text-decoration:none;">Login</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-engine"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles/tsparticles.bundle.min.js"></script>
+    <script src="js/animations.js"></script>
+
+    <script>
+        let selectedRole = 'client';
+        function setRole(role) {
+            selectedRole = role;
+            
+            const btnClient = document.getElementById('btn-client');
+            const btnAdmin = document.getElementById('btn-admin');
+            const iconClient = document.getElementById('icon-client');
+            const iconAdmin = document.getElementById('icon-admin');
+            
+            if(role === 'client') {
+                btnClient.style.borderColor = 'var(--primary)';
+                btnClient.style.color = '#111';
+                iconClient.style.color = 'var(--primary)';
+                
+                btnAdmin.style.borderColor = '#e2e8f0';
+                btnAdmin.style.color = '#888';
+                iconAdmin.style.color = '#888';
+            } else {
+                btnAdmin.style.borderColor = 'var(--primary)';
+                btnAdmin.style.color = '#111';
+                iconAdmin.style.color = 'var(--primary)';
+                
+                btnClient.style.borderColor = '#e2e8f0';
+                btnClient.style.color = '#888';
+                iconClient.style.color = '#888';
+            }
+        }
+        
+        document.getElementById('authForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            if(selectedRole === 'client') {
+                window.location.href = 'userdashboard.html';
+            } else {
+                window.location.href = 'admindashboard.html';
+            }
+        });
+    </script>
+</body>
+</html>

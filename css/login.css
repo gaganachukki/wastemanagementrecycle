@@ -1,0 +1,146 @@
+/* Login Page Styles */
+.login-page {
+  display: flex;
+  min-height: 100vh;
+  overflow-y: auto; overflow-x: hidden;
+  background-color: var(--bg);
+}
+
+.login-visual {
+  background-image: url("../assets/images/hero_2.webp");
+  background-size: cover;
+  background-position: center;
+
+  flex: 1;
+  background-color: var(--primary);
+  color: var(--surface);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-visual::before { content: ""; position: absolute; inset: 0; background: rgba(18, 60, 50, 0.85); z-index: 1; }
+.login-visual h1 {
+  position: relative; z-index: 2;
+
+  color: var(--surface);
+  font-size: 3rem;
+  margin-bottom: 24px;
+  max-width: 500px;
+  text-align: center;
+  z-index: 2;
+}
+
+.login-visual p {
+  color: rgba(255,255,255,0.8);
+  font-size: 1.25rem;
+  max-width: 400px;
+  text-align: center;
+  z-index: 2;
+}
+
+.login-visual-bg {
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  border: 2px dashed rgba(255,255,255,0.1);
+  border-radius: 50%;
+  animation: rotate 60s linear infinite;
+}
+
+.login-form-container {
+  width: 500px;
+  background: var(--surface);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 40px;
+  box-shadow: var(--shadow-lg);
+}
+
+.login-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+.login-header h2 {
+  margin-bottom: 8px;
+}
+
+.login-header p {
+  color: var(--text-muted);
+  margin-bottom: 32px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-bottom: 8px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+  font-size: 1rem;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.demo-logins {
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+
+.demo-logins p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.demo-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 1024px) {
+  .login-visual {
+  background-image: url("../assets/images/hero_2.webp");
+  background-size: cover;
+  background-position: center;
+ display: none; }
+  .login-form-container { width: 100%; align-items: center; }
+  .login-form { width: 100%; max-width: 400px; }
+  .login-brand { align-self: center; }
+}

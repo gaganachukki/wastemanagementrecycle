@@ -1,0 +1,100 @@
+/* Signup Page Styles */
+.signup-page {
+  display: flex;
+  min-height: 100vh;
+  overflow-y: auto; overflow-x: hidden;
+  background-color: #0b0f0c;
+}
+
+.signup-visual {
+  background-image: url("../assets/images/hero_2.webp");
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  color: #111;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.signup-visual::before { content: ""; position: absolute; inset: 0; background: rgba(10, 15, 12, 0.9); z-index: 1; }
+
+.signup-visual h1 {
+  position: relative; z-index: 2;
+  color: #fff;
+  font-size: 4rem;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.signup-visual p.subtext {
+  position: relative; z-index: 2;
+  color: rgba(255,255,255,0.7);
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 500px;
+  text-align: left;
+}
+
+.testimonial-card {
+  position: relative; z-index: 2;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 12px;
+  padding: 32px;
+  margin-top: 48px;
+  max-width: 500px;
+}
+
+.signup-form-container {
+  width: 500px;
+  background: var(--surface, #fff); /* Dark theme */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 40px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+.signup-header h2 {
+  color: #111;
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.signup-header p {
+  color: #888;
+  margin-bottom: 32px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #fff;
+  color: #111;
+  font-size: 1rem;
+}
+.form-control:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+@media (max-width: 1024px) {
+  .signup-visual { display: none; }
+  .signup-form-container { width: 100%; align-items: center; }
+  .signup-form { width: 100%; max-width: 400px; }
+  .signup-header { text-align: center; }
+}

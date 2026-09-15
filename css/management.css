@@ -1,0 +1,20 @@
+
+/* Management CSS */
+.management-hero {
+  background-image: url("../assets/images/content_17.webp");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 120px 0;
+}
+.management-hero::before {
+  content: ""; 
+  position: absolute; 
+  inset: 0; 
+  background: rgba(18, 60, 50, 0.85); 
+  z-index: 0;
+}
+.management-hero .container {
+  position: relative; 
+  z-index: 1;
+}

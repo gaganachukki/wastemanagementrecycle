@@ -1,0 +1,435 @@
+/* ===== User Dashboard CSS ===== */
+:root {
+  --user-primary: #1F8A5B; /* Neon Green */
+  --user-primary-dark: #123C32;
+  --user-bg-sidebar: #0f1411;
+  --user-bg-main: #141b18;
+  --user-bg-card: #1c2621;
+  --user-border: #23312b;
+  --user-text-muted: #888;
+}
+
+body {
+  background-color: var(--user-bg-main);
+  color: #fff;
+  font-family: var(--font-primary);
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* --- Sidebar --- */
+.sidebar {
+  width: 260px;
+  background-color: var(--user-bg-sidebar);
+  border-right: 1px solid var(--user-border);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 1.5rem 0;
+  overflow-y: auto;
+}
+
+.sidebar::-webkit-scrollbar { width: 5px; }
+.sidebar::-webkit-scrollbar-thumb { background: var(--user-border); }
+
+.brand {
+  padding: 0 1.5rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-secondary);
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.brand svg { width: 32px; height: 32px; fill: var(--user-primary); }
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid var(--user-border);
+  border-bottom: 1px solid var(--user-border);
+  margin-bottom: 1.5rem;
+}
+.user-profile img { width: 45px; height: 45px; border-radius: 50%; object-fit: cover; }
+.user-initial {
+  width: 45px; 
+  height: 45px; 
+  border-radius: 10px; 
+  background: linear-gradient(135deg, #7c3aed 0%, #c084fc 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: white;
+  flex-shrink: 0;
+}
+.user-info { overflow: hidden; }
+.user-info h4 { margin: 0; font-size: 1rem; }
+.user-email {
+  color: var(--user-text-muted); 
+  font-size: 0.75rem; 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 160px;
+}
+.user-role-pill {
+  display: inline-block;
+  border: 1px solid #06b6d4;
+  color: #06b6d4;
+  border-radius: 12px;
+  padding: 2px 8px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  margin-top: 4px;
+}
+.menu-section { padding: 0 1rem; margin-bottom: 1.5rem; }
+.menu-title { color: var(--user-primary); font-size: 0.75rem; text-transform: uppercase; font-weight: 600; margin-bottom: 0.5rem; padding-left: 0.5rem; }
+.menu-list { list-style: none; padding: 0; margin: 0; }
+.menu-item {
+  display: flex; align-items: center; padding: 0.75rem 1rem; color: var(--user-text-muted);
+  border-radius: 8px; text-decoration: none; margin-bottom: 2px; transition: 0.2s; font-size: 0.9rem;
+}
+.menu-item i { width: 18px; text-align: center; margin-right: 12px; font-size: 1.1rem; }
+.menu-item svg { width: 18px; height: 18px; margin-right: 12px; fill: currentColor; }
+.menu-item:hover { color: #fff; background-color: rgba(255,255,255,0.05); }
+.menu-item.active { background-color: var(--user-primary); color: #000; font-weight: 600; }
+.menu-item.active svg { fill: #000; }
+
+.badge { margin-left: auto; background: var(--user-primary); color: #000; font-size: 0.7rem; padding: 2px 6px; border-radius: 10px; font-weight: bold;}
+
+/* --- Main Layout --- */
+.main-content { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+
+/* --- Topbar --- */
+.topbar {
+  height: 70px; background-color: transparent; display: flex; align-items: center; justify-content: space-between; padding: 0 2rem;
+}
+.topbar-title { font-size: 1.2rem; font-weight: 600; margin: 0; }
+.topbar-right { display: flex; align-items: center; gap: 20px; }
+.icon-btn { background: none; border: none; color: var(--user-text-muted); cursor: pointer; position: relative; }
+.icon-btn svg { width: 22px; height: 22px; fill: currentColor; }
+.icon-btn:hover { color: var(--user-primary); }
+.icon-badge { position: absolute; top: -2px; right: -2px; background: var(--user-primary); width: 10px; height: 10px; border-radius: 50%; border: 2px solid var(--user-bg-main);}
+.top-profile { display: flex; align-items: center; gap: 10px; cursor: pointer; }
+.top-profile img { width: 35px; height: 35px; border-radius: 50%; }
+.top-initial {
+  width: 35px;
+  height: 35px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #7c3aed 0%, #c084fc 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  flex-shrink: 0;
+}
+
+/* --- Dashboard Content --- */
+.dashboard-scroll { flex: 1; overflow-y: auto; padding: 0 2rem 2rem; }
+
+/* Welcome Banner */
+.welcome-banner {
+  background: linear-gradient(to right, rgba(10,10,10,0.95) 40%, rgba(10,10,10,0.4)), url('../images/strength.webp');
+  background-size: cover; background-position: center; border-radius: 16px; padding: 2.5rem;
+  display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;
+  border: 1px solid var(--user-border);
+}
+
+/* --- SPA View Routing --- */
+.page-view {
+  display: none;
+  animation: fadeIn 0.4s ease;
+}
+.page-view.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Base styles for new content views */
+.page-header-content {
+  margin-bottom: 2rem;
+}
+.page-header-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+.page-header-content p {
+  color: var(--user-text-muted);
+}
+
+.content-card {
+  background: var(--user-bg-card);
+  border: 1px solid var(--user-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.content-card h3 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.welcome-text h2 { font-size: 2.5rem; margin: 0 0 0.5rem; font-family: var(--font-secondary); }
+.welcome-text span { color: var(--user-primary); }
+.welcome-text p { color: var(--user-text-muted); margin: 0 0 1rem; }
+.welcome-quote { font-style: italic; color: #fff; font-size: 0.95rem; }
+
+.member-stats { display: flex; flex-direction: column; gap: 1rem; background: rgba(0,0,0,0.5); padding: 1.5rem; border-radius: 12px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1);}
+.m-stat { display: flex; align-items: center; gap: 12px; }
+.m-stat svg { width: 20px; height: 20px; fill: var(--user-primary); }
+.m-stat div p { margin: 0; font-size: 0.75rem; color: var(--user-text-muted); }
+.m-stat div h5 { margin: 0; font-size: 0.95rem; }
+
+/* Quick Stats */
+.quick-stats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.5rem; margin-bottom: 2rem; }
+.q-card { background: var(--user-bg-card); border: 1px solid var(--user-border); border-radius: 12px; padding: 1.5rem; }
+.q-header { display: flex; align-items: center; gap: 12px; margin-bottom: 1rem; }
+.q-icon { width: 40px; height: 40px; border-radius: 50%; background: rgba(163, 230, 53, 0.1); display: flex; align-items: center; justify-content: center; }
+.q-icon svg { width: 20px; height: 20px; fill: var(--user-primary); }
+.q-title { margin: 0; font-size: 0.85rem; color: var(--user-text-muted); }
+.q-val { font-size: 2rem; margin: 0; font-weight: 700; font-family: var(--font-secondary); }
+.q-trend { font-size: 0.75rem; color: var(--user-text-muted); margin-top: 5px; display: flex; align-items: center; gap: 5px;}
+.q-trend span { color: var(--user-primary); }
+
+.progress-bar-bg { width: 100%; height: 6px; background: rgba(255,255,255,0.1); border-radius: 3px; margin-top: 10px; overflow: hidden;}
+.progress-bar-fill { height: 100%; background: var(--user-primary); width: 75%; }
+
+/* Middle Section */
+.middle-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 1.5rem; margin-bottom: 2rem; }
+.panel { background: var(--user-bg-card); border: 1px solid var(--user-border); border-radius: 12px; padding: 1.5rem; }
+.panel-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; }
+.panel-title { margin: 0; font-size: 1.1rem; }
+.view-all { color: var(--user-primary); font-size: 0.85rem; text-decoration: none; }
+
+/* Today's Workout */
+.workout-card { display: flex; gap: 1.5rem; align-items: center; }
+.w-img { width: 180px; height: 180px; border-radius: 12px; object-fit: cover; }
+.w-info h3 { margin: 0.5rem 0; font-size: 1.5rem; }
+.w-tag { background: rgba(163,230,53,0.1); color: var(--user-primary); padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: bold;}
+.w-meta { display: flex; gap: 15px; color: var(--user-text-muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+.w-meta span { display: flex; align-items: center; gap: 5px; }
+.w-meta svg { width: 14px; height: 14px; fill: currentColor; }
+.w-actions { display: flex; gap: 10px; }
+.btn { padding: 0.6rem 1.2rem; border-radius: 8px; border: none; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 8px;}
+.btn-primary { background: var(--user-primary); color: #000; }
+.btn-outline { background: transparent; border: 1px solid var(--user-border); color: #fff; }
+
+.anatomy-svg { width: 120px; height: 180px; margin-left: auto;}
+
+/* Upcoming Sessions */
+.session-list { display: flex; flex-direction: column; gap: 1rem; }
+.session-item { display: flex; gap: 12px; align-items: center; background: rgba(255,255,255,0.03); padding: 12px; border-radius: 8px; border: 1px solid var(--user-border);}
+.s-icon { width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+.s-icon svg { width: 20px; height: 20px; fill: #fff; }
+.s-info h4 { margin: 0 0 4px; font-size: 0.9rem; }
+.s-info p { margin: 0; font-size: 0.75rem; color: var(--user-text-muted); }
+
+/* Bottom Section */
+.bottom-grid { display: grid; grid-template-columns: 1fr 1.5fr 1.5fr 1fr; gap: 1.5rem; }
+
+/* Weekly Progress */
+.prog-item { margin-bottom: 1rem; }
+.prog-header { display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 6px; }
+.prog-header span:last-child { color: var(--user-text-muted); }
+
+/* Body Stats Rings */
+.ring-container { display: flex; justify-content: space-around; }
+.ring { width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; position: relative;}
+.ring-1 { background: conic-gradient(var(--user-primary) 70%, rgba(255,255,255,0.1) 70%); }
+.ring-2 { background: conic-gradient(#38bdf8 60%, rgba(255,255,255,0.1) 60%); }
+.ring-3 { background: conic-gradient(#ec4899 40%, rgba(255,255,255,0.1) 40%); }
+.ring-inner { width: 70px; height: 70px; background: var(--user-bg-card); border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.ring-inner h4 { margin: 0; font-size: 1.2rem; }
+.ring-inner span { font-size: 0.6rem; color: var(--user-text-muted); }
+
+/* Achievements */
+.achievements { display: flex; justify-content: space-around; text-align: center; }
+.badge-icon { width: 60px; height: 60px; margin: 0 auto 10px; }
+.badge-icon svg { width: 100%; height: 100%; }
+.achievements h5 { margin: 0 0 4px; font-size: 0.85rem; }
+.achievements p { margin: 0; font-size: 0.7rem; color: var(--user-text-muted); }
+
+/* Nutrition Macros */
+.macro-list { display: flex; flex-direction: column; gap: 12px; margin-top: 10px;}
+.macro-item { display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; }
+.macro-bar { flex: 1; height: 6px; background: rgba(255,255,255,0.1); border-radius: 3px; margin: 0 15px; overflow: hidden; }
+.m-fill { height: 100%; }
+.m-protein { background: var(--user-primary); width: 80%; }
+.m-carbs { background: #38bdf8; width: 60%; }
+.m-fats { background: #ec4899; width: 45%; }
+.nut-header { display: flex; align-items: center; gap: 20px; }
+.cal-ring { width: 70px; height: 70px; border-radius: 50%; background: conic-gradient(var(--user-primary) 77%, rgba(255,255,255,0.1) 77%); display: flex; align-items: center; justify-content: center; }
+.cal-inner { width: 64px; height: 64px; background: var(--user-bg-card); border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+.cal-inner h4 { margin: 0; font-size: 1.1rem; }
+.cal-inner span { font-size: 0.55rem; color: var(--user-text-muted); }
+.meal-img { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-left: auto; }
+
+/* Quick Actions */
+.quick-actions-grid { display: flex; justify-content: space-between; }
+.qa-item { display: flex; flex-direction: column; align-items: center; gap: 10px; cursor: pointer; color: var(--user-text-muted); transition: 0.2s;}
+.qa-item svg { width: 24px; height: 24px; fill: currentColor; }
+.qa-item span { font-size: 0.75rem; }
+.qa-item:hover { color: var(--user-primary); }
+
+/* --- Responsive --- */
+@media (max-width: 1200px) {
+  .quick-stats { grid-template-columns: repeat(3, 1fr); }
+  .bottom-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    position: fixed;
+    z-index: 1000;
+    left: -260px;
+    transition: 0.3s;
+  }
+  .sidebar.active { left: 0; }
+  .menu-toggle { display: block; }
+  .middle-grid { grid-template-columns: 1fr; }
+  .welcome-banner { flex-direction: column; align-items: flex-start; gap: 2rem; }
+  .member-stats { flex-direction: row; flex-wrap: wrap; }
+}
+
+@media (max-width: 768px) {
+  .quick-stats { grid-template-columns: repeat(2, 1fr); }
+  .bottom-grid { grid-template-columns: 1fr; }
+  .workout-card { flex-direction: column; text-align: center; }
+  .w-img { width: 100%; height: 200px; }
+  .w-actions { justify-content: center; }
+  .w-meta { justify-content: center; }
+  .anatomy-svg { margin: 1rem auto 0; }
+  .quick-actions-grid { flex-wrap: wrap; gap: 1rem; justify-content: center; }
+  .qa-item { width: 30%; }
+}
+
+@media (max-width: 576px) {
+  .quick-stats { grid-template-columns: 1fr; }
+  .member-stats { flex-direction: column; width: 100%; }
+  .welcome-banner { padding: 1.5rem; }
+  .welcome-text h2 { font-size: 2rem; }
+  .topbar { padding: 0 1rem; }
+  .dashboard-scroll { padding: 0 1rem 1rem; }
+}
+
+/* Mobile Responsive Additions */
+.sidebar-close {
+    display: none;
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-left: auto;
+}
+.mobile-logo-group {
+    display: none;
+    align-items: center;
+}
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width: 992px) {
+    .sidebar-close { display: block; }
+    .topbar-title { display: none !important; }
+    .mobile-logo-group { display: flex; }
+    .menu-toggle { display: block; }
+    #topbar-name { display: none !important; }
+}
+
+/* Mobile Responsive Text Wrapping Fixes */
+.welcome-text h2,
+#welcome-name {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    max-width: 100%;
+}
+
+.welcome-banner {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.main-content {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+    .welcome-text h2 {
+        font-size: clamp(1.8rem, 8vw, 2.5rem);
+        line-height: 1.2;
+    }
+}
+
+/* Fix for stretched/large buttons in lists */
+.content-card li {
+    align-items: center !important;
+}
+
+.content-card li button {
+    white-space: nowrap !important;
+    min-width: 90px !important;
+    height: 36px !important;
+    padding: 0 10px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 0.85rem !important;
+}
+
+/* Fix Quick Actions grid on mobile */
+@media (max-width: 576px) {
+    .quick-actions-grid {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 15px !important;
+    }
+    .qa-item {
+        width: 85px !important; /* Fixed width to ensure uniform wrapping */
+        text-align: center;
+    }
+    .qa-item span {
+        white-space: normal;
+        font-size: 0.75rem;
+        line-height: 1.2;
+    }
+}
+
+/* Fix text crush/wrap in workout meta items */
+.w-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.w-meta span {
+    white-space: nowrap;
+}
+
+/* Fix text crush in panel headers */
+.panel-header {
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.view-all {
+    white-space: nowrap;
+}
