@@ -324,8 +324,7 @@ button, input, select, textarea {
 @media (max-width: 768px) {
   .section { padding: 80px 0; }
   .grid-2, .grid-3 { grid-template-columns: 1fr; }
-  .nav-links, .nav-actions .btn-secondary { display: none; }
-  .menu-toggle { display: block; }
+  .grid-4 { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; gap: 24px; text-align: center; }
   .text-h1 { font-size: 2.5rem; }
@@ -553,6 +552,7 @@ button, input, select, textarea {
 @media (max-width: 768px) {
     .menu-toggle {
         display: flex !important;
+        order: 3;
     }
     
     .nav-actions {
@@ -560,29 +560,32 @@ button, input, select, textarea {
     }
 
     .nav-links {
-        display: flex !important;
+        display: none !important;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         position: fixed;
         top: 0;
-        right: -100%; /* Hidden off-screen */
+        left: 0;
         width: 100vw;
         height: 100vh;
         background: rgba(246, 245, 239, 0.98);
         backdrop-filter: blur(10px);
-        z-index: 1000;
-        transition: right 0.4s ease-in-out;
-        gap: 2rem;
+        z-index: 999;
+        gap: 1.5rem;
+        padding-top: 100px;
+        padding-bottom: 40px;
+        overflow-y: auto;
     }
     
     .nav-links.active {
-        right: 0;
+        display: flex !important;
     }
     
     .nav-links a {
         font-size: 1.5rem;
         font-weight: 600;
+        color: var(--text-main);
     }
     
     .mobile-login-link {
@@ -592,5 +595,13 @@ button, input, select, textarea {
         padding: 10px 24px;
         border-radius: 50px;
         margin-top: 1rem;
+    }
+}
+
+/* Ensure logo stays visible on top of the mobile menu overlay */
+@media (max-width: 768px) {
+    .nav-brand {
+        position: relative !important;
+        z-index: 1001 !important;
     }
 }

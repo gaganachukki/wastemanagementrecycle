@@ -6,7 +6,7 @@
   position: relative;
 
   padding: 100px 0;
-  background: var(--bg);
+  background-color: var(--bg);
   text-align: center;
 }
 .services-hero::before { content: ""; position: absolute; inset: 0; background: rgba(246, 245, 239, 0.85); z-index: 0; }
@@ -77,7 +77,7 @@
   padding: 14px 16px;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
-  background: var(--bg);
+  background-color: var(--bg);
   font-size: 1rem;
 }
 
