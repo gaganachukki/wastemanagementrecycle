@@ -576,3 +576,12 @@
   43%  { opacity: 0; }
   100% { opacity: 0; }
 }
+
+/* Button mobile fixes */
+@media (max-width: 768px) {
+  .hero-actions, 
+  div[style*="display: flex; gap: 16px; justify-content: center;"],
+  div[style*="display: flex; gap: 16px;"] {
+    flex-wrap: wrap !important;
+  }
+}

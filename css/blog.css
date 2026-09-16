@@ -123,3 +123,27 @@
   .newsletter-form { flex-direction: column; }
   .newsletter-card { padding: 40px 24px; }
 }
+
+/* Responsive additions for Blog Page */
+@media (max-width: 768px) {
+  .blog-filters {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .editor-pick-card {
+    padding: 24px !important;
+    text-align: center;
+  }
+  .podcast-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .event-row {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 16px;
+  }
+  .event-row .btn {
+    width: 100%;
+  }
+}

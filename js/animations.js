@@ -60,8 +60,10 @@ document.addEventListener("DOMContentLoaded", () => {
     
     if (menuToggle && navLinks) {
         menuToggle.addEventListener('click', () => {
-            menuToggle.classList.toggle('active');
+            const isActive = menuToggle.classList.toggle('active');
             navLinks.classList.toggle('active');
+            // Toggle body scroll lock
+            document.body.style.overflow = isActive ? 'hidden' : '';
         });
         
         // Close menu when a link is clicked
@@ -69,6 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
             link.addEventListener('click', () => {
                 menuToggle.classList.remove('active');
                 navLinks.classList.remove('active');
+                document.body.style.overflow = '';
             });
         });
     }

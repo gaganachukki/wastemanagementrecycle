@@ -185,9 +185,9 @@
     <section class="section extra-section">
         <div class="container">
             <h2 class="text-h2" style="margin-bottom: 32px;">Inside Our Facilities</h2>
-            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 16px; height: 400px;">
+            <div class="facilities-gallery">
                 <div style="background: url('assets/images/content_8.webp') center/cover; border-radius: var(--radius-md);"></div>
-                <div style="display: grid; grid-template-rows: 1fr 1fr; gap: 16px;">
+                <div class="facilities-subgallery">
                     <div style="background: url('assets/images/content_9.webp') center/cover; border-radius: var(--radius-md);"></div>
                     <div style="background: var(--surface); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; padding: 24px; text-align: center;">
                         <h4>State-of-the-art optical sorting technology</h4>
@@ -288,7 +288,7 @@
                 <div class="footer-col newsletter-col">
                     <h3>Newsletter</h3>
                     
-                    <form class="footer-newsletter" onsubmit="event.preventDefault();">
+                    <form class="footer-newsletter" action="404.html" method="GET">
                         <input type="email" placeholder="Your email address" required>
                         <button type="submit">Subscribe</button>
                     </form>

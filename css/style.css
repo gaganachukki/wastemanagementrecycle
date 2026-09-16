@@ -605,3 +605,25 @@ button, input, select, textarea {
         z-index: 1001 !important;
     }
 }
+
+/* Enhanced Button Mobile Responsiveness */
+.btn-group {
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .btn {
+        padding: 10px 20px !important;
+        font-size: 0.9rem !important;
+        white-space: nowrap;
+    }
+    .hero-actions, .btn-group {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Auth Back Button */
+.auth-back-btn:hover {
+    color: var(--primary) !important;
+}

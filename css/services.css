@@ -88,3 +88,32 @@
   .service-card { flex-direction: column; }
   .form-grid { grid-template-columns: 1fr; }
 }
+
+/* Enhanced responsive grid overrides for Services page */
+.popular-plan {
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  .grid-3, .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .popular-plan {
+    transform: none !important;
+    z-index: auto !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-2, .grid-3, .grid-4 {
+    grid-template-columns: 1fr !important;
+  }
+  .booking-interface {
+    padding: 24px;
+  }
+  .popular-plan {
+    transform: none !important;
+    z-index: auto !important;
+  }
+}

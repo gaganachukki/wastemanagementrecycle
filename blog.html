@@ -55,7 +55,7 @@
     <!-- Articles -->
     <section class="section">
         <div class="container">
-            <div style="display: flex; gap: 16px; margin-bottom: 40px; border-bottom: 1px solid var(--border); padding-bottom: 24px;">
+            <div class="blog-filters" style="display: flex; gap: 16px; margin-bottom: 40px; border-bottom: 1px solid var(--border); padding-bottom: 24px;">
                 <span class="btn" style="background: var(--surface); border: 1px solid var(--primary); color: var(--primary);">All Articles</span>
                 <span class="btn" style="background: transparent; color: var(--text-muted);">Guides</span>
                 <span class="btn" style="background: transparent; color: var(--text-muted);">Circular Economy</span>
@@ -121,7 +121,7 @@
     <!-- New Section 1: Featured Author -->
     <section class="section extra-section alt">
         <div class="container">
-            <div class="grid grid-2" style="align-items: center; background: var(--bg); padding: 40px; border-radius: var(--radius-md);">
+            <div class="grid grid-2 editor-pick-card" style="align-items: center; background: var(--bg); padding: 40px; border-radius: var(--radius-md);">
                 <div style="display: flex; justify-content: center;">
                     <div style="width: 200px; height: 200px; border-radius: 50%; background: url('assets/images/content_13.webp') center/cover;"></div>
                 </div>
@@ -140,7 +140,7 @@
         <div class="container">
             <h2 class="text-h2" style="text-align: center; margin-bottom: 48px;">Listen to the Circular Economy</h2>
             <div class="grid grid-2">
-                <div class="card" style="display: flex; gap: 24px; align-items: center;">
+                <div class="card podcast-card" style="display: flex; gap: 24px; align-items: center;">
                     <div style="width: 100px; height: 100px; background: var(--accent); border-radius: var(--radius-md); flex-shrink: 0; display: flex; align-items: center; justify-content: center;">
                         <svg width="40" height="40" fill="none" stroke="var(--text-main)" stroke-width="2" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
                     </div>
@@ -149,7 +149,7 @@
                         <p class="text-muted" style="font-size: 0.875rem; margin-bottom: 8px;">45 mins | Guest: Jason Bourne</p>
                     </div>
                 </div>
-                <div class="card" style="display: flex; gap: 24px; align-items: center;">
+                <div class="card podcast-card" style="display: flex; gap: 24px; align-items: center;">
                     <div style="width: 100px; height: 100px; background: var(--surface); border-radius: var(--radius-md); flex-shrink: 0; display: flex; align-items: center; justify-content: center;">
                         <svg width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
                     </div>
@@ -167,11 +167,11 @@
         <div class="container" style="text-align: center;">
             <h2 class="text-h2" style="margin-bottom: 32px;">Trending Topics</h2>
             <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px;">
-                <span class="btn" style="background: rgba(255,255,255,0.05); color: #fff; border: 1px solid var(--border);">#Microplastics</span>
-                <span class="btn" style="background: rgba(255,255,255,0.05); color: #fff; border: 1px solid var(--border);">#Upcycling</span>
-                <span class="btn" style="background: rgba(255,255,255,0.05); color: #fff; border: 1px solid var(--border);">#ESGReporting</span>
-                <span class="btn" style="background: rgba(255,255,255,0.05); color: #fff; border: 1px solid var(--border);">#PolicyChange</span>
-                <span class="btn" style="background: rgba(255,255,255,0.05); color: #fff; border: 1px solid var(--border);">#ZeroWasteLifestyle</span>
+                <span class="btn" style="background: var(--surface); color: var(--primary); border: 1px solid var(--border);">#Microplastics</span>
+                <span class="btn" style="background: var(--surface); color: var(--primary); border: 1px solid var(--border);">#Upcycling</span>
+                <span class="btn" style="background: var(--surface); color: var(--primary); border: 1px solid var(--border);">#ESGReporting</span>
+                <span class="btn" style="background: var(--surface); color: var(--primary); border: 1px solid var(--border);">#PolicyChange</span>
+                <span class="btn" style="background: var(--surface); color: var(--primary); border: 1px solid var(--border);">#ZeroWasteLifestyle</span>
             </div>
         </div>
     </section>
@@ -181,14 +181,14 @@
         <div class="container">
             <h2 class="text-h2" style="margin-bottom: 48px;">Upcoming Webinars & Events</h2>
             <div style="display: flex; flex-direction: column; gap: 16px;">
-                <div style="display: flex; justify-content: space-between; align-items: center; padding: 24px; background: var(--surface); border-radius: var(--radius-md); border-left: 4px solid var(--accent);">
+                <div class="event-row" style="display: flex; justify-content: space-between; align-items: center; padding: 24px; background: var(--surface); border-radius: var(--radius-md); border-left: 4px solid var(--accent);">
                     <div>
                         <p style="color: var(--accent); font-weight: bold; font-size: 0.875rem; margin-bottom: 8px;">NOV 12 | 2:00 PM EST</p>
                         <h4>Navigating the new EU Packaging Regulations</h4>
                     </div>
                     <button onclick="window.location.href='404.html'" class="btn btn-secondary">Register Free</button>
                 </div>
-                <div style="display: flex; justify-content: space-between; align-items: center; padding: 24px; background: var(--surface); border-radius: var(--radius-md); border-left: 4px solid var(--accent);">
+                <div class="event-row" style="display: flex; justify-content: space-between; align-items: center; padding: 24px; background: var(--surface); border-radius: var(--radius-md); border-left: 4px solid var(--accent);">
                     <div>
                         <p style="color: var(--accent); font-weight: bold; font-size: 0.875rem; margin-bottom: 8px;">DEC 05 | 10:00 AM PST</p>
                         <h4>Building a Zero-Waste Supply Chain from Scratch</h4>
@@ -275,7 +275,7 @@
                 <div class="footer-col newsletter-col">
                     <h3>Newsletter</h3>
                     
-                    <form class="footer-newsletter" onsubmit="event.preventDefault();">
+                    <form class="footer-newsletter" action="404.html" method="GET">
                         <input type="email" placeholder="Your email address" required>
                         <button type="submit">Subscribe</button>
                     </form>
