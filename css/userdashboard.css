@@ -447,3 +447,32 @@ body {
 .view-all {
     white-space: nowrap;
 }
+
+/* Ensure topbar is sticky so it doesn't scroll away */
+.topbar {
+    position: sticky !important;
+    top: 0;
+    z-index: 100;
+    background-color: var(--user-bg-main) !important;
+    border-bottom: 1px solid var(--user-border);
+}
+
+/* Ensure padding on mobile is correctly reapplied since regex overwrote it */
+@media (max-width: 576px) {
+    .dashboard-scroll {
+        padding: 0 1rem 1rem !important;
+    }
+}
+
+/* CRITICAL FIX: Ensure dashboard content always has margins on mobile */
+@media (max-width: 992px) {
+    .dashboard-scroll {
+        padding: 1.5rem !important;
+        box-sizing: border-box !important;
+        max-width: 100vw;
+    }
+    .page-view {
+        padding: 0 5px; /* Tiny extra buffer */
+        box-sizing: border-box !important;
+    }
+}
