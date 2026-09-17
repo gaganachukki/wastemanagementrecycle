@@ -139,10 +139,7 @@ body {
 }
 
 /* --- Dashboard Content --- */
-.dashboard-scroll {
-  flex: 1;
-  padding: 0 2rem 2rem;
-}
+.dashboard-scroll { flex: 1; padding: 2rem !important; box-sizing: border-box !important; max-width: 100vw; overflow-x: hidden; }
 
 /* Welcome Banner */
 .welcome-banner {
@@ -331,10 +328,7 @@ body {
   .welcome-banner { padding: 1.5rem; }
   .welcome-text h2 { font-size: 2rem; }
   .topbar { padding: 0 1rem; }
-  .dashboard-scroll {
-  flex: 1;
-  padding: 0 2rem 2rem;
-}
+  .dashboard-scroll { flex: 1; padding: 2rem !important; box-sizing: border-box !important; max-width: 100vw; overflow-x: hidden; }
 }
 
 /* Mobile Responsive Additions */
@@ -460,7 +454,7 @@ body {
 /* Ensure padding on mobile is correctly reapplied since regex overwrote it */
 @media (max-width: 576px) {
     .dashboard-scroll {
-        padding: 0 1rem 1rem !important;
+        padding: 1.5rem !important; box-sizing: border-box !important; overflow-x: hidden;
     }
 }
 
